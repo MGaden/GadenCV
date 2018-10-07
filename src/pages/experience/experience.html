@@ -1,0 +1,16 @@
+
+<ion-content padding>
+  <ion-list>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" *ngFor='let experience of experiences' type="item-text-wrap">
+        <ion-thumbnail item-start>
+          <img [src]="experience.employeerFace">
+        </ion-thumbnail>        
+        <h2>{{experience.title}}</h2>
+        <p>{{experience.employeer}}</p>
+		<p>{{experience.period}}</p>
+		<a href="{{experience.employeerURL}}">{{experience.employeerURL}}</a>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>
